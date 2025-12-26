@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🦸 DC's Personal Website</title>
+    <style>
+      /* Layout for the Profile Section */
+      .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 40px; /* Space between image and text */
+        margin-bottom: 20px;
+      }
+
+      .profile-pic {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        /* Equivalent to your old border-radius style */
+      }
+
+      /* Styling the Experience Table */
+      table {
+        width: 100%;
+        border-collapse: collapse; /* Removes double borders */
+        margin-top: 15px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px; /* Replaces cellpadding */
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+
+      /* Navigation Links */
+      footer nav {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>: Groups your introductory content. -->
+    <header class="profile-header">
+      <img
+        src="images/profile-pic.png"
+        alt="Dileep Chaudhary's Profile Picture"
+        class="profile-pic"
+      />
+      <div>
+        <h1>Dileep Chaudhary</h1>
+        <p>
+          <em
+            >AI/ML engineer and Web Developer at
+            <strong>The AITC International</strong>.</em
+          >
+        </p>
+        <p>
+          I am a passionate web developer and AI/ML enthusiast. I am dedicated
+          to creating innovative solutions and building impactful web
+          applications.
+        </p>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- <main>: Wraps the primary unique content of the page. -->
+
+    <main>
+      <!-- <section>: Divides the page into logical chunks (Education and Experience). -->
+      <section id="education">
+        <h3>Books and Teaching</h3>
+        <ul>
+          <li>
+            Web Development Courses -
+            <a
+              href="https://www.coursera.org/courses?query=web%20development"
+              target="_blank"
+              >Coursera</a
+            >
+          </li>
+          <li>
+            Python: Beginner to Advanced For Data Professionals -
+            <a href="https://codebasics.io/..." target="_blank">CodeBasics</a>
+          </li>
+          <li>
+            Oracle AI Training and Certification -
+            <a
+              href="https://www.oracle.com/education/training/ai/"
+              target="_blank"
+              >Oracle</a
+            >
+          </li>
+          <li>
+            Data Science and Machine Learning with Python -
+            <a href="https://codebasics.io/..." target="_blank">CodeBasics</a>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="experience">
+        <h3>Work Experience</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Role</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The AITC International</td>
+              <td>AI/ML Engineer and Web Developer Instructor</td>
+              <td>2024 - Present</td>
+            </tr>
+            <tr>
+              <td>Freelance</td>
+              <td>Web Developer</td>
+              <td>2021 - 2024</td>
+            </tr>
+            <tr>
+              <td>Tezash Tech Pvt Ltd.</td>
+              <td>Junior Web Developer</td>
+              <td>2019 - 2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- <footer>: Used for the bottom links. -->
+    <footer>
+      <nav aria-label="Footer Navigation">
+        <a href="hobbies.html">My Hobbies</a>
+        <a href="contact-me.html">Contact Me</a>
+      </nav>
+    </footer>
+  </body>
+</html>
